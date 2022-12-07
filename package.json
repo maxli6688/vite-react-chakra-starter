@@ -22,12 +22,15 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fontsource/plus-jakarta-sans": "^4.5.10",
+    "axios": "^1.2.1",
+    "ethers": "^5.7.2",
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.6.0",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "wagmi": "^0.8.10"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.2.0",
