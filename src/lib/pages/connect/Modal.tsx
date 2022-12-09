@@ -1,5 +1,6 @@
-import { Box, UseDisclosureProps } from "@chakra-ui/react";
+import type { UseDisclosureProps } from "@chakra-ui/react";
 import {
+  Box,
   VStack,
   HStack,
   Modal,
@@ -21,9 +22,9 @@ export default function SelectWalletModal({
   closeModal: () => void;
 }) {
   const { data, error, connect } = useConnect();
-  const t = (t: string) => t;
-  const handleconnectWallet = (t: string) => {
-    console.log(t);
+  const t = (t1: string) => t1;
+  const handleconnectWallet = (t2: string) => {
+    // console.log(t2);
   };
   return (
     <Modal isOpen={isOpen} onClose={closeModal} isCentered>
@@ -95,8 +96,8 @@ export default function SelectWalletModal({
               </HStack>
             </Button>
           </VStack>
-          <Box display={"none"}>
-            <div className="inline-block w-2/6 my-2 p-2.5 text-center">
+          <Box display="none">
+            {/* <div className="inline-block w-2/6 my-2 p-2.5 text-center">
               <div
                 className="cursor-pointer"
                 onClick={() => handleconnectWallet("metamask")}
@@ -199,14 +200,14 @@ export default function SelectWalletModal({
                 />
                 <span className="text-white font-medium">BitKeep</span>
               </div>
-            </div>
+            </div> */}
             {/* <div className="inline-block w-2/6 my-2 p-2.5 text-center">
             <div className="cursor-pointer" onClick={() => handleconnectWallet('safepal')}>
               <img src="/images/wallets/safepal.png" className="w-10 mx-auto mb-2" alt="" />
               <span className="text-white font-medium">SafePal</span>
             </div>
           </div> */}
-            <div className="inline-block w-2/6 my-2 p-2.5 text-center">
+            {/* <div className="inline-block w-2/6 my-2 p-2.5 text-center">
               <div
                 className="cursor-pointer"
                 onClick={() => handleconnectWallet("trustWallet")}
@@ -218,7 +219,7 @@ export default function SelectWalletModal({
                 />
                 <span className="text-white font-medium">Trust Wallet</span>
               </div>
-            </div>
+            </div> */}
           </Box>
           {/* or login with email */}
           {/* or login with google */}
